@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Esuku Seti - my personal information</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Esuku Seti</h1>
+        <p>Bachelor of Information Technology</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>My Background</h2>
+            <p>
+                I am Esuku Seti, a student of Muni University
+                I'm stugying bachelors degree course in information technology 
+                My major focus in the area of technology are in the areas of cyber security,webdesigning,system analysis
+            </p>
+        </section>
+
+        <section>
+            <h2>My Enthusiasm for Technology</h2>
+            <p>
+                My enthusiasm in the field of technology is to be competent in the technology areas ofwebdesigning,system analysis, cyber security and many others 
+            </p>
+        </section>
+
+    </main>
+            <!-- First Image -->
+            <img
+                src="images/student.jpg"
+                alt="Information Technology student working on a computer"
+                width="300"
+                height="200">
+        </section>
+
+
+        <!-- Academic Interests Section -->
+        <section id="academic">
+            <h2>My Academic Interests</h2>
+
+            <p>
+                My enthusiasm for Technology are
+                skill development, solving real-world problems and build
+                useful digital solutions.
+            </p>
+
+            <!-- Second Image -->
+            <img
+                src="images/technology.jpg"
+                alt="Computer technology equipment used for Information Technology studies"
+                width="300"
+                height="200">
+
+            <h3>My Favorite Course Modules</h3>
+
+            <!-- Course Modules Table -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Course Module</th>
+                        <th>Why I Like It</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Web Application Development</td>
+                        <td>
+                            I enjoy learning how to create and structure
+                            websites using HTML, CSS, and JavaScript.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Network Administration</td>
+                        <td>
+                            I am interested in understanding computer networks,
+                            connectivity, and how network systems are managed.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Cyber Security</td>
+                        <td>
+                            I like learning how computers, networks, and
+                            information systems can be protected from threats.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <!-- Links Section -->
+        <section id="links">
+            <h2>Useful Links</h2>
+
+            <!-- Internal Link -->
+            <p>
+                <a href="#about">Read more about me</a>
+            </p>
+
+            <!-- External Link -->
+<p>
+    <a
+        href="https://github.com/esukuseti555-glitch/itm1131-portfolio"
+        target="_blank"
+        rel="noopener">
+        Visit My ITM 1131 GitHub Portfolio
+    </a>
+</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Esuku Seti. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
