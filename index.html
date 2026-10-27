@@ -3,28 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esuku Seti - Academic Profile</title>
+    <title>Esuku Seti | AI & Software Developer Portfolio</title>
+    <style>
+        /* Base Reset & Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #2aa745;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1abc9c;
+        }
+
+        /* Hamburger Button (Mobile Nav Toggle) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        /* Main Content Layout */
+        main {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .profile-bio p {
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section Spacing */
+        #projects p {
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Form & Character Counter */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .char-counter {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.3rem;
+            text-align: right;
+        }
+
+        .char-counter.limit-reached {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        button.submit-btn {
+            background: #1abc9c;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button.submit-btn:hover {
+            background: #16a085;
+        }
+
+        /* Mobile Responsive View */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: #2c3e50;
+                flex-direction: column;
+                align-items: center;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                max-height: 400px;
+                padding: 1rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header & Navigation Bar -->
     <header>
-        <h1>Esuku Seti</h1>
-        <p>Muni University | Faculty of Technoscience</p>
+        <nav class="navbar">
+            <div class="logo">Esuku Seti</div>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Main Content Container -->
     <main>
-        <section>
-            <h2>Academic Background</h2>
-            <p>I am a student at Muni University pursuing Bachelor of Information Technology under the Faculty of Technoscience for the 2026/2027 academic year. My focus is on mastering foundational web technologies to build robust, scalable applications.</p>
+        <!-- About / Profile Section -->
+        <section id="about" class="profile-bio">
+            <h2>About Me</h2>
+            <p>Hello! I am Esuku Seti, an AI and software developer passionate about building intelligent systems, automation solutions, and robust web applications.</p>
+            <p>Welcome to my professional profile page. Explore my portfolio showcasing AI integration, healthcare systems, education portals, business automation, and smart-city software solutions below!</p>
         </section>
 
-        <section>
-            <h2>Technical Goals &amp; Specialization</h2>
-            <p>Currently enrolled in the ITM program, I am specializing in web development.</p>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>NeuralLens AI Image Classifier:</strong> A web application powered by machine learning models to analyze, categorize, and tag user-uploaded photos in real time.</p>
+            <p><strong>MediCare Patient Portal:</strong> A secure hospital management system prototype allowing patients to book appointments, view medical histories, and staff to efficiently manage health records.</p>
+            <p><strong>WorkFlow Office Automation Hub:</strong> A modern business productivity tool featuring meeting room booking, digital document management, and cross-department announcements.</p>
+            <p><strong>EduCore School Management System:</strong> A comprehensive administration portal for educational institutions to track student attendance, grade records, fee payments, and teacher schedules.</p>
+            <p><strong>EcoSmart City Waste Management:</strong> A public sector IoT dashboard designed for government officials to monitor municipal garbage collection routes, bin fill-levels, and recycling facility capacities.</p>
+            <p><strong>StaffSync Employee Management System:</strong> A comprehensive HR dashboard for tracking employee attendance, performance reviews, payroll statuses, and role permissions.</p>
+        </section>
+
+        <!-- Contact Section with Live Character Counter -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required value="esukuseti555@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" maxlength="250" required placeholder="Type your message here..."></textarea>
+                    <!-- Live character counter feedback element -->
+                    <div id="charCounter" class="char-counter">0 / 250 characters</div>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Esuku Seti. All rights reserved.</p>
-    </footer>
+    <!-- JavaScript Interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Feature 1: Navigation Menu Toggle Logic
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('navLinks');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Automatically close the mobile menu when a nav link is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Feature 2: Live Character-Count Feedback Logic
+            const messageInput = document.getElementById('message');
+            const charCounter = document.getElementById('charCounter');
+            const maxLength = messageInput.getAttribute('maxlength');
+
+            messageInput.addEventListener('input', () => {
+                const currentLength = messageInput.value.length;
+                charCounter.textContent = `${currentLength} / ${maxLength} characters`;
+
+                if (currentLength >= maxLength) {
+                    charCounter.classList.add('limit-reached');
+                } else {
+                    charCounter.classList.remove('limit-reached');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
